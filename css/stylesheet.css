@@ -1,0 +1,265 @@
+*{
+	font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: white;
+}
+/* Suppose to center Whole page
+container{
+    width: 1000px;
+    position: relative;
+} */
+nav{
+    background-color: #222931;
+    /* color: antiquewhite; */
+    width:950px;
+    height: 50px;
+    position:relative;
+    margin: 0 auto;
+    top: 25px;  
+    text-align: left;
+    text-decoration: none;
+}
+li a {
+    display: inline-block;
+    padding: 10px;
+    color: antiquewhite;
+}
+li:hover {
+	background-color: #ffe718;
+}
+li ul li{
+    background-color: #222931;
+}
+a:hover{
+    color: #222931;
+}
+.logo{	
+    position: relative;
+    padding:0px;
+    left:515px;
+    bottom: 10px;
+    top: 10px;
+}
+.header{
+	padding: 0 auto;
+    max-width: 100%;
+}
+.banner{
+    display: flex;
+    margin: 20px auto;
+    width: 950px;
+    position: relative;
+
+}
+.text{
+    display: none;
+    text-align: center;
+    line-height: 220px;
+    color: white;
+    font-size: 32px;
+}
+.banner-hover:hover .text{
+    display: block;
+    opacity: .8;
+    transition: .15s ease;
+    background-color: #252c2e;
+    width: 300px;
+    height: 220px;
+}
+.banner-1{
+    width: 300px;
+    height: 220px;
+    background-image: url("../img/banner-1.jpg");
+    margin: 10px;
+}
+.banner-2{
+    width: 300px;
+    height: 220px;
+    background-image: url("../img/banner-2.jpg");
+    margin: 10px;
+}
+.banner-3{
+    width: 300px;
+    height: 220px;
+    background-image: url("../img/banner-3.jpg");
+    margin: 10px;
+}
+
+.alert{
+    max-width:100%;
+    height: 140px;
+    background-color: #ffe718;
+    text-align: center;
+    position:relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	padding: 0 auto;
+    max-width: 100%;
+}
+p:nth-of-type(1){
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 24px;
+}
+p:nth-of-type(2){
+    display: inline-block;
+
+}
+p:nth-of-type(3){
+    display: inline-block;
+    background-color: white;
+    padding: 25px;   
+    color: black;
+
+}
+p:nth-of-type(3):hover{
+    background-color: black !important;
+    color: white;
+}
+nav ul{
+    list-style: none; 
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 500px;
+}
+nav ul li{
+    width: 120px;
+    height: 50px;
+    /* line-height: 39px; */
+    text-align: center;
+    float: left;
+
+}
+nav ul ul{
+    display: none;
+    background-color: #222931;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+
+.footer{
+    padding: 0 auto;
+    max-width: 100%;
+}
+.footer-buttons{
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    margin: auto;
+    width: 950px;
+}
+.button-1{
+    background-color: #ffe718;
+    width: 300px;
+    height: 100px;
+    margin-left: 25px;
+    display: inline-flex;
+
+}
+.button-1 i{
+    margin-left: 25px;
+    font-size: 50px;
+    line-height: 100px;
+}
+.button-1:hover{
+    background-color: black;
+    color: white;
+}
+.button-1 div h3 div{
+    display: inline-flex;
+    padding-left: 100px;
+}
+.button-txt{
+    padding-left: 15px;
+    padding-top: 30px;
+}
+hr{
+    width: 930px;
+    margin: 0 auto;
+}
+
+h2{
+    /* display:block; */
+   line-height: 30px;
+   margin: 0 auto;
+
+}
+article:nth-of-type(1){
+    width: 400px;
+    /* line-height: 60px; */
+    padding: 20px;
+}
+article:nth-of-type(2){
+    width: 300px;
+    /* line-height: 30px; */
+    padding: 20px;
+
+}
+article a{
+    color: rgb(128, 120, 120);
+    display: block;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.banner a i {
+    margin-right: 20px;
+    font-size: 25px;
+    line-height: 10px;
+}
+.form{
+    margin-left: 45px;
+}
+footer {
+	background-color: #222931;
+	color: white;
+	padding: 15px;
+	font-size: 20px;
+	font-weight: 60px;
+}
+footer p{
+    margin-left: 1000px;
+}
+.service-info{
+    /* display: flex; */
+    margin: 60px auto;
+    width: 950px;
+    position: relative;
+
+}
+.service-info p{
+    font-size: 20px;
+}
+.service-info p span{
+    color: #ffe718;
+
+
+}
+/* .service-info p span::after{
+    content: "Regelgeving kan per gemeente verschillen Wij nemen dit voor onze rekening";
+
+} */
+.info-hover{
+    display: none;
+    color:white !important;
+	font-size: 12px;
+    width: 200px;
+    background-color: #aeb6be;
+    padding: 15px;
+    position: absolute;    
+    top: 21px;
+    left:0;
+}
+.service-info p span:hover .info-hover{
+    display: block;
+
+}
+p>span{
+    position: relative;
+}
